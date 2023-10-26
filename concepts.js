@@ -75,3 +75,28 @@ var anchoVentana = window.innerWidth;
 console.log("Ancho de la ventana visible: " + anchoVentana + " píxeles");
 
 // Estas propiedades son particularmente útiles cuando deseas realizar tareas de diseño responsivo o interactuar con elementos en la página de acuerdo con el tamaño de la ventana del navegador. Por ejemplo, puedes utilizar estas propiedades para ajustar el diseño de tu página web, redimensionar elementos o controlar la lógica de visualización en función del tamaño de la ventana del navegador.
+
+
+// setAttribute es un método en JavaScript que se utiliza para establecer o modificar atributos en un elemento HTML. Funciona de la siguiente manera:
+
+<html>
+<head>
+    <title>Ejemplo de setAttribute</title>
+</head>
+<body>
+    <p id="miParrafo">Este es un párrafo.</p>
+
+    <script>
+        // Obtener el elemento con id "miParrafo"
+        var parrafo = document.getElementById("miParrafo");
+
+        // Agregar el atributo "class" con el valor "destacado"
+        parrafo.setAttribute("class", "destacado");
+
+        // Modificar el atributo "id"
+        parrafo.setAttribute("id", "nuevoId");
+    </script>
+</body>
+</html>
+
+// En este ejemplo, primero seleccionamos un párrafo con el id "miParrafo" y luego utilizamos setAttribute para agregar la clase "destacado" y modificar el atributo "id". Después de ejecutar este código, el párrafo se verá afectado por la clase y el atributo modificados.
