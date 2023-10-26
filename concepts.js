@@ -139,6 +139,19 @@ function saludar() {
   
 // Es importante tener en cuenta que setInterval puede acumularse si la función que se ejecuta en cada intervalo toma más tiempo del especificado en el intervalo. Si la función toma más tiempo del especificado para ejecutarse, es posible que se produzcan múltiples llamadas superpuestas. Para evitar este problema, puedes asegurarte de que la función sea lo más eficiente posible o utilizar setTimeout para programar la próxima llamada después de que la actual haya terminado.
 
+// setTimeout es una función en JavaScript que se utiliza para programar la ejecución de una función o un fragmento de código después de un cierto período de tiempo. Su sintaxis básica es la siguiente:
 
+setTimeout(función, retraso);
 
+// función: La función que se ejecutará después de que haya transcurrido el retraso especificado.
+// retraso: El tiempo, en milisegundos, que debe transcurrir antes de que se ejecute la función.
+// setTimeout es útil cuando deseas ejecutar una función después de un cierto tiempo o para crear retrasos en tu código. Aquí tienes un ejemplo de cómo usar setTimeout para mostrar un mensaje después de 2 segundos:
 
+function mostrarMensaje() {
+    console.log("Este mensaje se mostrará después de 2 segundos.");
+  }
+  
+  setTimeout(mostrarMensaje, 2000); // Se ejecutará 'mostrarMensaje' después de 2000 ms (2 segundos).
+
+// Ten en cuenta que setTimeout se ejecutará una sola vez, y la función especificada se ejecutará después de que haya transcurrido el retraso especificado. Si deseas ejecutar una función repetidamente con intervalos regulares, puedes usar setInterval
+// Es importante tener en cuenta que el tiempo especificado en setTimeout no es garantía de que la función se ejecutará exactamente después de ese período. Puede haber un pequeño desfase debido a la carga del sistema y otros factores, pero en general, setTimeout es una forma efectiva de programar tareas para su ejecución futura en JavaScript.
