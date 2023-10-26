@@ -62,3 +62,16 @@ var ctx = canvas.getContext("2d");
 // clearCanvas(): Puede ser un método personalizado para borrar todo el contenido del lienzo.
 
 // Estos son solo algunos de los métodos disponibles en el contexto 2D del <canvas>. Existen muchos más métodos y propiedades que permiten realizar una amplia gama de operaciones de dibujo y transformaciones. 
+
+
+// innerHeight: Esta propiedad devuelve la altura del área visible del navegador en píxeles. En otras palabras, representa la altura del área del navegador que muestra el contenido de una página web sin incluir barras de desplazamiento, barras de herramientas o cualquier otro elemento de la interfaz del navegador.
+
+var alturaVentana = window.innerHeight;
+console.log("Altura de la ventana visible: " + alturaVentana + " píxeles");
+
+// innerWidth: Esta propiedad devuelve el ancho del área visible del navegador en píxeles. Representa el ancho del área del navegador que muestra el contenido de la página web sin incluir elementos de la interfaz del navegador.
+
+var anchoVentana = window.innerWidth;
+console.log("Ancho de la ventana visible: " + anchoVentana + " píxeles");
+
+// Estas propiedades son particularmente útiles cuando deseas realizar tareas de diseño responsivo o interactuar con elementos en la página de acuerdo con el tamaño de la ventana del navegador. Por ejemplo, puedes utilizar estas propiedades para ajustar el diseño de tu página web, redimensionar elementos o controlar la lógica de visualización en función del tamaño de la ventana del navegador.
