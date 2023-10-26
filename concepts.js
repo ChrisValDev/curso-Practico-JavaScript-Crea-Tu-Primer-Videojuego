@@ -100,3 +100,12 @@ console.log("Ancho de la ventana visible: " + anchoVentana + " píxeles");
 </html>
 
 // En este ejemplo, primero seleccionamos un párrafo con el id "miParrafo" y luego utilizamos setAttribute para agregar la clase "destacado" y modificar el atributo "id". Después de ejecutar este código, el párrafo se verá afectado por la clase y el atributo modificados.
+
+// La función .trim() es un método que se utiliza en JavaScript para eliminar los espacios en blanco (espacios, tabulaciones y saltos de línea) al principio y al final de una cadena de texto. Este método no afecta a los espacios en blanco dentro de la cadena, solo los que están en los extremos.
+// Es importante mencionar que .trim() no modifica la cadena original, en su lugar, devuelve una nueva cadena con los espacios en blanco eliminados. Por lo tanto, debes asignar el resultado a una nueva variable o reemplazar la cadena original si deseas conservar la versión sin espacios en blanco.
+
+var textoConEspacios = "   Hola, soy un texto con espacios en blanco.   ";
+var textoSinEspacios = textoConEspacios.trim();
+
+// Si deseas reemplazar la cadena original:
+textoConEspacios = textoSinEspacios;
