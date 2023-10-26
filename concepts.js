@@ -119,3 +119,26 @@ console.log(palabras);
 
 // En este caso, el delimitador es un espacio en blanco, y la cadena se divide en un arreglo de palabras:
 ["Este", "es", "un", "ejemplo", "de", "cadena", "de", "texto"]
+
+
+// setInterval es una función en JavaScript que se utiliza para ejecutar una función o un fragmento de código a intervalos regulares de tiempo. Su sintaxis básica es la siguiente:
+
+setInterval(función, intervalo);
+
+// función: La función que se ejecutará en cada intervalo.
+// intervalo: El tiempo, en milisegundos, que debe transcurrir antes de que se ejecute la función nuevamente.
+// El setInterval ejecutará la función repetidamente a intervalos regulares hasta que se cancele explícitamente o se cierre la página web que la contiene.
+
+// Aquí tienes un ejemplo de cómo usar setInterval para imprimir "Hola, mundo" cada segundo:
+
+function saludar() {
+    console.log("Hola, mundo");
+  }
+  
+  setInterval(saludar, 1000); // Se ejecutará la función 'saludar' cada 1000 ms (1 segundo).
+  
+// Es importante tener en cuenta que setInterval puede acumularse si la función que se ejecuta en cada intervalo toma más tiempo del especificado en el intervalo. Si la función toma más tiempo del especificado para ejecutarse, es posible que se produzcan múltiples llamadas superpuestas. Para evitar este problema, puedes asegurarte de que la función sea lo más eficiente posible o utilizar setTimeout para programar la próxima llamada después de que la actual haya terminado.
+
+
+
+
