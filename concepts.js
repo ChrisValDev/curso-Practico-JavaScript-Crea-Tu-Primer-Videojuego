@@ -109,3 +109,13 @@ var textoSinEspacios = textoConEspacios.trim();
 
 // Si deseas reemplazar la cadena original:
 textoConEspacios = textoSinEspacios;
+
+
+// La función .split() es un método que se utiliza en JavaScript para dividir una cadena de texto en un arreglo (array) de subcadenas basadas en un delimitador especificado. El resultado es un arreglo que contiene todas las partes de la cadena original que están separadas por el delimitador. A continuación, se explica cómo funciona .split():
+
+var texto = "Este es un ejemplo de cadena de texto";
+var palabras = texto.split(" ");
+console.log(palabras);
+
+// En este caso, el delimitador es un espacio en blanco, y la cadena se divide en un arreglo de palabras:
+["Este", "es", "un", "ejemplo", "de", "cadena", "de", "texto"]
