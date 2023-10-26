@@ -155,3 +155,26 @@ function mostrarMensaje() {
 
 // Ten en cuenta que setTimeout se ejecutará una sola vez, y la función especificada se ejecutará después de que haya transcurrido el retraso especificado. Si deseas ejecutar una función repetidamente con intervalos regulares, puedes usar setInterval
 // Es importante tener en cuenta que el tiempo especificado en setTimeout no es garantía de que la función se ejecutará exactamente después de ese período. Puede haber un pequeño desfase debido a la carga del sistema y otros factores, pero en general, setTimeout es una forma efectiva de programar tareas para su ejecución futura en JavaScript.
+
+// clearInterval es una función en JavaScript que se utiliza para detener la ejecución de una función que se está ejecutando repetidamente con setInterval. Permite cancelar el intervalo creado por setInterval. Su sintaxis es la siguiente:
+
+clearInterval(identificador);
+
+// identificador: El valor devuelto por setInterval al crear el intervalo que deseas detener.
+// Cuando ejecutas clearInterval con el identificador del intervalo, se detiene la ejecución de la función que se estaba ejecutando periódicamente a través de setInterval. Aquí tienes un ejemplo:
+
+function mostrarMensaje() {
+    console.log("Este mensaje se mostrará cada segundo.");
+  }
+  
+  const intervalID = setInterval(mostrarMensaje, 1000);
+  
+  // Después de 5 segundos, detenemos la ejecución del intervalo.
+  setTimeout(() => {
+    clearInterval(intervalID);
+    console.log("Intervalo detenido después de 5 segundos.");
+  }, 5000);
+
+// En este ejemplo, hemos creado un intervalo que llama a la función mostrarMensaje cada segundo con setInterval. Luego, después de 5 segundos, utilizamos clearInterval para detener la ejecución periódica de la función. Una vez que clearInterval se llama con el identificador del intervalo, la función mostrarMensaje dejará de ejecutarse en intervalos de 1 segundo.
+
+// clearInterval es útil cuando necesitas detener un proceso que se está ejecutando en segundo plano de manera repetitiva, como animaciones, actualizaciones automáticas de contenido, o cualquier tarea que se ejecute con setInterval.
