@@ -178,3 +178,43 @@ function mostrarMensaje() {
 // En este ejemplo, hemos creado un intervalo que llama a la función mostrarMensaje cada segundo con setInterval. Luego, después de 5 segundos, utilizamos clearInterval para detener la ejecución periódica de la función. Una vez que clearInterval se llama con el identificador del intervalo, la función mostrarMensaje dejará de ejecutarse en intervalos de 1 segundo.
 
 // clearInterval es útil cuando necesitas detener un proceso que se está ejecutando en segundo plano de manera repetitiva, como animaciones, actualizaciones automáticas de contenido, o cualquier tarea que se ejecute con setInterval.
+
+// localStorage
+
+// localStorage es un objeto de almacenamiento en el navegador web que permite a las aplicaciones web almacenar datos de manera persistente en la máquina del usuario. Los datos almacenados en localStorage persisten incluso después de que el usuario cierre su navegador y apague su computadora. Esto lo hace útil para almacenar preferencias de usuario, configuraciones, datos de sesión, y más.
+
+// El uso de localStorage es bastante sencillo. Puedes guardar y recuperar datos en forma de pares clave-valor. Aquí hay una descripción básica de cómo funciona:
+
+// Almacenar datos en localStorage:
+// Para guardar datos en localStorage, utilizas el método setItem(key, value):
+
+localStorage.setItem('nombre', 'Juan');
+
+// Esto almacena el valor "Juan" bajo la clave "nombre" en localStorage. Los valores en localStorage son siempre almacenados como cadenas de texto.
+
+// Recuperar datos de localStorage:
+// Para recuperar datos almacenados, utilizas el método getItem(key):
+
+const nombre = localStorage.getItem('nombre');
+console.log(nombre); // Imprimirá "Juan"
+
+// En este caso, nombre contendrá el valor "Juan" que previamente se almacenó en localStorage bajo la clave "nombre".
+
+// Modificar datos en localStorage:
+// Puedes actualizar el valor de un elemento en localStorage simplemente almacenando un nuevo valor bajo la misma clave:
+
+localStorage.setItem('nombre', 'Ana'); // Actualiza el valor de 'nombre' a "Ana"
+
+// Eliminar datos de localStorage:
+// Para eliminar un elemento de localStorage, utilizas el método removeItem(key):
+
+localStorage.removeItem('nombre'); // Elimina la clave "nombre" y su valor asociado
+
+// Limpiar todo el localStorage:
+// Puedes eliminar todos los elementos almacenados en localStorage utilizando el método clear():
+
+localStorage.clear(); // Elimina todos los datos almacenados en localStorage
+
+// Es importante tener en cuenta que los datos almacenados en localStorage están limitados por el dominio. Esto significa que los datos almacenados en localStorage solo son accesibles para las páginas del mismo dominio que los almacenaron, por razones de seguridad.
+
+// Ten en cuenta que localStorage tiene una capacidad limitada, que varía según el navegador y puede oscilar entre 5-10 MB. Por lo tanto, es importante no abusar de su uso y ser consciente de las limitaciones de almacenamiento.
