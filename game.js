@@ -27,13 +27,13 @@ function starGame () {
     game.textAlign = 'end';
 
     const map = maps[0];
-    const mapRows = maps[0].trim().split('\n');
+    const mapRows = map.trim().split('\n');
     const mapRowCols = mapRows.map(row => row.trim().split('')); 
     console.log({map, mapRows, mapRowCols});
 
     for (let row = 1; row <= 10; row++) {
         for (let col = 1; col <= 10; col++) {
-            game.fillText(emojis['X'], elementsSize * row, elementsSize * col);        
+            game.fillText(emojis[mapRowCols[row - 1][col - 1]], elementsSize * col, elementsSize * row);        
         }
     }
 }
